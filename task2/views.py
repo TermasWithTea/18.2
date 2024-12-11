@@ -8,3 +8,4 @@ def func(request):
 
 class Class2(TemplateView):
     template_name = 'second_task/class_template.html'
+
