@@ -1,0 +1,17 @@
+{% extends "menu.html" %}
+
+{% block pagename %}Главное Меню{% endblock %}
+
+{% block content %}
+    <h2>Добро пожаловать в Главное Меню</h2>
+    <div class="platform-menu">
+        <div class="menu-item">
+            <h3><a href="{% url 'cart' %}">Корзина</a></h3>
+            <p>Перейдите в корзину, чтобы просмотреть добавленные игры и оформить заказ.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="{% url 'games' %}">Игры</a></h3>
+            <p>Просмотрите доступные игры, чтобы добавить их в свою корзину.</p>
+        </div>
+    </div>
+{% endblock %}
